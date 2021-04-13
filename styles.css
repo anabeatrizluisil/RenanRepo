@@ -1,0 +1,69 @@
+:root {
+    --main-color: #1c1d24;
+    --transition-color: #0f2560;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    background-color: var(--main-color);
+}
+
+body {
+    width: 100vh;
+    height: 100vh;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--transition-color);
+
+    z-index: 1;
+
+}
+
+.load-after {
+    transition: transform .3s;
+    transform: translateX(100%); 
+}
+
+.container {
+    width: 100%;
+
+    position: absolute;
+}
+
+.menu {
+    padding: 4rem 8rem;
+}
+
+.menu ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li {
+    margin-left: 4rem;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: whitesmoke;
+
+}
+
+
